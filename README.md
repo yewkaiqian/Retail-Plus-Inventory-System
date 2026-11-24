@@ -10,8 +10,8 @@ Retail Plus is a Python-based inventory management system designed for small ret
 - **Product Management** – Add, view, search, edit and delete product records.
 - **Inventory Sorting** – Sort products by category, name, price, stock quantity and promotion status.
 - **Product Searching** – Search products by ID, category, name, promotion status and stock level.
-- **Automatic Stock Classification** – Categorise products based on available stock quantities.
-- **Inventory Ordering** – Manage supplier information, purchase orders and order statuses.
+- **Automatic Stock Classification** – Categorise products into out-of-stock, low, medium and high stock levels.
+- **Inventory Ordering** – Manage supplier information, inventory orders and order statuses.
 - **Order Export** – Generate individual or multiple inventory order records in text files.
 - **Monthly Reporting** – Generate inventory statistics and summaries to support business decision-making.
 - **Input Validation and Exception Handling** – Handle invalid inputs and file operation errors.
@@ -26,33 +26,65 @@ Retail Plus is a Python-based inventory management system designed for small ret
 | Microsoft Excel | Inventory and order data storage |
 | Text Files | User records and report generation |
 
-## Programming Concepts
+## Technical Implementation
 
 - Modular programming
-- Object-oriented programming (OOP)
-- File handling
-- Exception handling
-- Data manipulation
 - CRUD operations
+- Data manipulation and analysis
+- File handling and persistent data storage
+- Exception handling
 - Input validation
+- Automatic identifier generation
+- Rule-based stock classification
 
-## My Contributions
+## Repository Structure
+
+| File | Description |
+|---|---|
+| `menu.py` | Main application entry point and menu navigation |
+| `register.py` | User account registration |
+| `login.py` | User login and credential verification |
+| `add_product.py` | New product registration |
+| `view_product.py` | Inventory display and sorting |
+| `search_product.py` | Multi-criteria product searching |
+| `edit_product.py` | Product information updates |
+| `delete_product.py` | Product record deletion |
+| `inventory_ordering_system.py` | Inventory order management |
+| `print_inventory_ordering_system.py` | Inventory order export |
+| `generate_report.py` | Monthly inventory report generation |
+| `RetailPlus.xlsx` | Product inventory and order records |
+| `user_info.txt` | Local user account records |
+| `Report.pdf` | Detailed project documentation |
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3
+- Pandas
+- OpenPyXL
+
+### Installation and Execution
+
+1. Clone or download this repository.
+2. Install the required Python libraries:
+
+   `pip install pandas openpyxl`
+
+3. Ensure `RetailPlus.xlsx` is located in the project directory.
+4. Run the main application:
+
+   `python menu.py`
+
+5. Register a new account or log in to access the inventory management system.
+
+## Individual Contributions – Yew Kai Qian
 
 - Developed the View Current Inventory module with multiple sorting options.
 - Developed the Search Product module with multiple search criteria.
-- Implemented automatic product ID generation and stock-level classification.
-- Developed input validation and exception handling for product registration.
-- Contributed to the user registration module through text file handling.
-
-## Project Background
-
-This system was developed collaboratively by a team of four students as part of the Introduction to Business Programming coursework at Universiti Tunku Abdul Rahman (UTAR), June 2025 trimester.
-
-**Project Type:** Academic Group Project
-
-**Course Code:** UCCB1104
-
-**Development Year:** 2025
+- Co-developed the Add New Product module, incorporating automatic product ID generation and stock-level classification.
+- Contributed to product input validation and exception handling.
+- Co-developed the user registration module with credential validation and text file handling.
 
 ## Contributors
 
@@ -61,6 +93,35 @@ This system was developed collaboratively by a team of four students as part of 
 - Liew Jia Min
 - Yew Kai Qian
 
-## Project Limitations
+## Project Documentation
 
-This project is an academic prototype that uses Excel and text files for local data storage. Future improvements could include database integration, password hashing, a graphical user interface and enhanced inventory analytics.
+Refer to the [Project Report](Report.pdf) for detailed documentation, including:
+
+- Problem statements and project objectives
+- System design and implementation
+- Source code explanations
+- Application outputs
+- Input validation and testing
+- Advanced programming concepts
+- Individual contributions
+
+## Project Background
+
+This project was developed collaboratively by four undergraduate students at Universiti Tunku Abdul Rahman (UTAR) as part of the Introduction to Business Programming coursework.
+
+- **Course:** UCCB1104 – Introduction to Business Programming
+- **Trimester:** June 2025
+- **Project Type:** Academic Group Project
+
+## Project Limitations and Future Improvements
+
+The current implementation is an academic prototype that uses Excel and text files for local data storage.
+
+Potential future improvements include:
+
+- Relational database integration
+- Password hashing and improved authentication
+- Graphical user interface (GUI)
+- Enhanced inventory analytics and visualisation
+- Low-stock notifications
+- Multi-user access support
